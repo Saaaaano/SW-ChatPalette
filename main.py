@@ -2,6 +2,13 @@ from gettext import npgettext
 import streamlit as st
 import function as fc
 import header as h
+from PIL import Image
+
+image = Image.open('./static/fabicon.png')
+st.set_page_config(
+    page_title = "SW2.5 チャパレ生成",
+    page_icon = image
+)
 
 st.title("SW2.5 チャパレ生成")
 
